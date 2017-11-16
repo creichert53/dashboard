@@ -1,0 +1,32 @@
+@import 'base';
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~react-md/src/scss/react-md';
+
+$md-primary-color: $md-blue-grey-900;
+$md-secondary-color: $md-green-a-700;
+
+@include react-md-everything;
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: url("https://cdn.dribbble.com/users/61715/screenshots/1570276/attachments/241325/plume.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
